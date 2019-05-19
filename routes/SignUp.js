@@ -14,6 +14,8 @@ router.post('/',(req,res)=>{
 
   const {firstName,email,password}=req.body;
 
+  console.log(firstName);
+
   bcrypt.hash(password,saltRounds,(err,hash)=>{
     User.create({
       firstName:firstName,
