@@ -9,7 +9,7 @@ router.get("/:id", (req, res) => {
       user_id: id
     }
   }).then(user => {
-    res.send(user);
+    res.json(user);
   });
 });
 
